@@ -1,0 +1,8 @@
+# The file with my real IP and MAC
+config.py
+
+# The file that keeps me logged into Telegram
+*.session
+
+# Python's temporary folders
+__pycache__/
