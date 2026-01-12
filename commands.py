@@ -12,6 +12,12 @@ RESTART_PC = "restart pc"
 RUN_STEAM = "run steam"
 RUN_DISCORD = "run discord"
 RUN_GTA = "run gta"
+RUN_ROBOQUEST = "run roboquest"
+RUN_STRINOVA = "run strinova"
+RUN_L4D2 = "run l4d2"
+RUN_L4D = "run l4d"
+RUN_KOVAAKS = "run kovaaks"
+RUN_DARK_SOULS = "run dark souls"
 RUN_BROWSER = "run browser"
 
 # System control / info

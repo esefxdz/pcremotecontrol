@@ -55,6 +55,30 @@ def run_gta():
     print(f"🚗 {cmd.RUN_GTA} triggered")
     return "🚀 Launching GTA V..."
 
+def launch_roboquest():
+    requests.get(f"http://{PC_IP}:5000/roboquest", timeout=3)
+    return "🤖 Booting Roboquest..."
+
+def launch_strinova():
+    requests.get(f"http://{PC_IP}:5000/strinova", timeout=3)
+    return "☄️ Launching Strinova..."
+
+def launch_l4d2():
+    requests.get(f"http://{PC_IP}:5000/l4d2", timeout=3)
+    return "🧟 Opening Left 4 Dead 2..."
+
+def launch_l4d():
+    requests.get(f"http://{PC_IP}:5000/l4d", timeout=3)
+    return "🧟 Opening Left 4 Dead 1..."
+
+def launch_kovaaks():
+    requests.get(f"http://{PC_IP}:5000/kovaaks", timeout=3)
+    return "🎯 Practice time: Kovaak's..."
+
+def launch_darksouls():
+    requests.get(f"http://{PC_IP}:5000/darksouls", timeout=3)
+    return "🔥 Prepare to Die: Dark Souls..."
+
 # === AUTOMATION ===
 def run_backup():
     print(f"📂 {cmd.RUN_BACKUP} triggered")
@@ -92,6 +116,18 @@ async def handler(event):
         reply = restart_pc()
     elif msg == cmd.RUN_GTA:
         reply = run_gta()
+    elif msg == "run roboquest":
+        reply = launch_roboquest()
+    elif msg == "run strinova":
+        reply = launch_strinova()
+    elif msg == "run l4d2":
+        reply = launch_l4d2()
+    elif msg == "run l4d":
+        reply = launch_l4d()
+    elif msg == "run kovaaks":
+        reply = launch_kovaaks()
+    elif msg == "run dark souls":
+        reply = launch_darksouls()
     elif msg == cmd.RUN_BACKUP:
         reply = run_backup()
     elif msg == cmd.PING:
