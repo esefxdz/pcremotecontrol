@@ -96,10 +96,8 @@ async def handler(event):
     msg = event.raw_text.lower().strip()
     reply = None
 
-    # Routing logic
-    if msg == cmd.WAKE_PC:
-        reply = wake_pc()
-    elif msg == cmd.PC_STATUS:
+# Routing logic
+    if msg == cmd.PC_STATUS:
         reply = ping_pc()
     elif msg == cmd.SLEEP_PC:
         reply = sleep_pc()
@@ -107,28 +105,20 @@ async def handler(event):
         reply = restart_pc()
     elif msg == cmd.LOCK_PC:
         reply = lock_pc()
-    elif msg == cmd.LOGOFF_PC:
-        reply = logoff_pc()
     elif msg == cmd.RUN_STEAM:
         reply = launch_steam()
-    elif msg == cmd.RESTART_PC:
-        reply = restart_pc()
-    elif msg == cmd.RUN_GTA:
-        reply = run_gta()
-    elif msg == "run roboquest":
+    elif msg == cmd.RUN_ROBOQUEST:
         reply = launch_roboquest()
-    elif msg == "run strinova":
+    elif msg == cmd.RUN_STRINOVA:
         reply = launch_strinova()
-    elif msg == "run l4d2":
+    elif msg == cmd.RUN_L4D2:
         reply = launch_l4d2()
-    elif msg == "run l4d":
+    elif msg == cmd.RUN_L4D:
         reply = launch_l4d()
-    elif msg == "run kovaaks":
+    elif msg == cmd.RUN_KOVAAKS:
         reply = launch_kovaaks()
-    elif msg == "run dark souls":
+    elif msg == cmd.RUN_DARK_SOULS:
         reply = launch_darksouls()
-    elif msg == cmd.RUN_BACKUP:
-        reply = run_backup()
     elif msg == cmd.PING:
         reply = "pong"
     else:

@@ -11,7 +11,6 @@ RESTART_PC = "restart pc"
 # App/game launches
 RUN_STEAM = "run steam"
 RUN_DISCORD = "run discord"
-RUN_GTA = "run gta"
 RUN_ROBOQUEST = "run roboquest"
 RUN_STRINOVA = "run strinova"
 RUN_L4D2 = "run l4d2"
