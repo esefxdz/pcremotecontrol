@@ -5,6 +5,7 @@ from telethon import TelegramClient, events
 # ADDED GROUP_ID TO THE IMPORT BELOW
 from config import API_ID, API_HASH, PC_MAC, PC_IP, GROUP_ID 
 import commands as cmd
+import requests
 
 # === TELEGRAM CLIENT ===
 client = TelegramClient("tablet_session", API_ID, API_HASH)
@@ -20,8 +21,11 @@ def restart_pc():
     return "🔄 Restarting PC..."
 
 def sleep_pc():
-    print(f"😴 {cmd.SLEEP_PC} triggered")
-    return "😴 Putting PC to sleep..."
+    try:
+        requests.get(f"http://{PC_IP}:5000/sleep", timeout=3)
+        return "😴 Sleep command sent to PC!"
+    except:
+        return "❌ PC is not responding (Is the receiver script running?)"
 
 # === SYSTEM CONTROL ===
 def lock_pc():
@@ -39,9 +43,13 @@ def ping_pc():
     return "🖥️ PC is Online" if status == 0 else "🌑 PC is Offline"
 
 # === APP/GAME LAUNCHES ===
-def run_steam():
-    print(f"🎮 {cmd.RUN_STEAM} triggered")
-    return "🚀 Launching Steam..."
+def launch_steam():
+    try:
+        # The tablet just "calls" the PC's office
+        requests.get(f"http://{PC_IP}:5000/steam", timeout=3)
+        return "🎮 Launching Steam on PC..."
+    except:
+        return "❌ PC unreachable"
 
 def run_gta():
     print(f"🚗 {cmd.RUN_GTA} triggered")
@@ -79,7 +87,9 @@ async def handler(event):
     elif msg == cmd.LOGOFF_PC:
         reply = logoff_pc()
     elif msg == cmd.RUN_STEAM:
-        reply = run_steam()
+        reply = launch_steam()
+    elif msg == cmd.RESTART_PC:
+        reply = restart_pc()
     elif msg == cmd.RUN_GTA:
         reply = run_gta()
     elif msg == cmd.RUN_BACKUP:
