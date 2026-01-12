@@ -2,7 +2,6 @@ import os
 import subprocess
 from wakeonlan import send_magic_packet
 from telethon import TelegramClient, events
-# ADDED GROUP_ID TO THE IMPORT BELOW
 from config import API_ID, API_HASH, PC_MAC, PC_IP, GROUP_ID 
 import commands as cmd
 import requests
