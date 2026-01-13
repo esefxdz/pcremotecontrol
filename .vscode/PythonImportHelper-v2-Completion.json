@@ -1,0 +1,480 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "send_magic_packet",
+        "importPath": "wakeonlan",
+        "description": "wakeonlan",
+        "isExtraImport": true,
+        "detail": "wakeonlan",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramClient",
+        "importPath": "telethon",
+        "description": "telethon",
+        "isExtraImport": true,
+        "detail": "telethon",
+        "documentation": {}
+    },
+    {
+        "label": "events",
+        "importPath": "telethon",
+        "description": "telethon",
+        "isExtraImport": true,
+        "detail": "telethon",
+        "documentation": {}
+    },
+    {
+        "label": "API_ID",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "API_HASH",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "PC_MAC",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "PC_IP",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "GROUP_ID",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "commands",
+        "description": "commands",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "WAKE_PC",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "WAKE_PC = \"wake pc\"\nSLEEP_PC = \"sleep pc\"\nRESTART_PC = \"restart pc\"\n# App/game launches\nRUN_STEAM = \"run steam\"\nRUN_ROBOQUEST = \"run roboquest\"\nRUN_STRINOVA = \"run strinova\"\nRUN_L4D2 = \"run l4d2\"\nRUN_L4D = \"run l4d\"\nRUN_KOVAAKS = \"run kovaaks\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "SLEEP_PC",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "SLEEP_PC = \"sleep pc\"\nRESTART_PC = \"restart pc\"\n# App/game launches\nRUN_STEAM = \"run steam\"\nRUN_ROBOQUEST = \"run roboquest\"\nRUN_STRINOVA = \"run strinova\"\nRUN_L4D2 = \"run l4d2\"\nRUN_L4D = \"run l4d\"\nRUN_KOVAAKS = \"run kovaaks\"\nRUN_DOOM = \"run doom\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RESTART_PC",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RESTART_PC = \"restart pc\"\n# App/game launches\nRUN_STEAM = \"run steam\"\nRUN_ROBOQUEST = \"run roboquest\"\nRUN_STRINOVA = \"run strinova\"\nRUN_L4D2 = \"run l4d2\"\nRUN_L4D = \"run l4d\"\nRUN_KOVAAKS = \"run kovaaks\"\nRUN_DOOM = \"run doom\"\nRUN_DRG = \"run drg\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_STEAM",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_STEAM = \"run steam\"\nRUN_ROBOQUEST = \"run roboquest\"\nRUN_STRINOVA = \"run strinova\"\nRUN_L4D2 = \"run l4d2\"\nRUN_L4D = \"run l4d\"\nRUN_KOVAAKS = \"run kovaaks\"\nRUN_DOOM = \"run doom\"\nRUN_DRG = \"run drg\"\nRUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_ROBOQUEST",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_ROBOQUEST = \"run roboquest\"\nRUN_STRINOVA = \"run strinova\"\nRUN_L4D2 = \"run l4d2\"\nRUN_L4D = \"run l4d\"\nRUN_KOVAAKS = \"run kovaaks\"\nRUN_DOOM = \"run doom\"\nRUN_DRG = \"run drg\"\nRUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_STRINOVA",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_STRINOVA = \"run strinova\"\nRUN_L4D2 = \"run l4d2\"\nRUN_L4D = \"run l4d\"\nRUN_KOVAAKS = \"run kovaaks\"\nRUN_DOOM = \"run doom\"\nRUN_DRG = \"run drg\"\nRUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"\n# System control / info",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_L4D2",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_L4D2 = \"run l4d2\"\nRUN_L4D = \"run l4d\"\nRUN_KOVAAKS = \"run kovaaks\"\nRUN_DOOM = \"run doom\"\nRUN_DRG = \"run drg\"\nRUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"\n# System control / info\nPING = \"ping\"      ",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_L4D",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_L4D = \"run l4d\"\nRUN_KOVAAKS = \"run kovaaks\"\nRUN_DOOM = \"run doom\"\nRUN_DRG = \"run drg\"\nRUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"\n# System control / info\nPING = \"ping\"      \nPC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_KOVAAKS",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_KOVAAKS = \"run kovaaks\"\nRUN_DOOM = \"run doom\"\nRUN_DRG = \"run drg\"\nRUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"\n# System control / info\nPING = \"ping\"      \nPC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_DOOM",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_DOOM = \"run doom\"\nRUN_DRG = \"run drg\"\nRUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"\n# System control / info\nPING = \"ping\"      \nPC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_DRG",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_DRG = \"run drg\"\nRUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"\n# System control / info\nPING = \"ping\"      \nPC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_APEX",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_APEX = \"run apex\"\nRUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"\n# System control / info\nPING = \"ping\"      \nPC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_HITMAN",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_HITMAN = \"run hitman\"\nRUN_PHASMO = \"run phasmo\"\n# System control / info\nPING = \"ping\"      \nPC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "RUN_PHASMO",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "RUN_PHASMO = \"run phasmo\"\n# System control / info\nPING = \"ping\"      \nPC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "PING",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "PING = \"ping\"      \nPC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "PC_STATUS",
+        "kind": 5,
+        "importPath": "commands",
+        "description": "commands",
+        "peekOfCode": "PC_STATUS = \"status\"",
+        "detail": "commands",
+        "documentation": {}
+    },
+    {
+        "label": "API_ID",
+        "kind": 5,
+        "importPath": "config.example",
+        "description": "config.example",
+        "peekOfCode": "API_ID = 0000000\nAPI_HASH = 'your_api_hash_here'\nPC_MAC = '00:00:00:00:00:00'\nPC_IP = '192.168.1.XXX'\nGROUP_ID = 123 #starts with \"-\" no need to add yk this \" thing idk",
+        "detail": "config.example",
+        "documentation": {}
+    },
+    {
+        "label": "API_HASH",
+        "kind": 5,
+        "importPath": "config.example",
+        "description": "config.example",
+        "peekOfCode": "API_HASH = 'your_api_hash_here'\nPC_MAC = '00:00:00:00:00:00'\nPC_IP = '192.168.1.XXX'\nGROUP_ID = 123 #starts with \"-\" no need to add yk this \" thing idk",
+        "detail": "config.example",
+        "documentation": {}
+    },
+    {
+        "label": "PC_MAC",
+        "kind": 5,
+        "importPath": "config.example",
+        "description": "config.example",
+        "peekOfCode": "PC_MAC = '00:00:00:00:00:00'\nPC_IP = '192.168.1.XXX'\nGROUP_ID = 123 #starts with \"-\" no need to add yk this \" thing idk",
+        "detail": "config.example",
+        "documentation": {}
+    },
+    {
+        "label": "PC_IP",
+        "kind": 5,
+        "importPath": "config.example",
+        "description": "config.example",
+        "peekOfCode": "PC_IP = '192.168.1.XXX'\nGROUP_ID = 123 #starts with \"-\" no need to add yk this \" thing idk",
+        "detail": "config.example",
+        "documentation": {}
+    },
+    {
+        "label": "GROUP_ID",
+        "kind": 5,
+        "importPath": "config.example",
+        "description": "config.example",
+        "peekOfCode": "GROUP_ID = 123 #starts with \"-\" no need to add yk this \" thing idk",
+        "detail": "config.example",
+        "documentation": {}
+    },
+    {
+        "label": "API_ID",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "API_ID = 1234567           \nAPI_HASH = 'your_hash'     \nPC_MAC = 'D8:43:AE:60:81:4E'\nPC_IP = '192.168.1.107'\nGROUP_ID = -5249975398",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "API_HASH",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "API_HASH = 'your_hash'     \nPC_MAC = 'D8:43:AE:60:81:4E'\nPC_IP = '192.168.1.107'\nGROUP_ID = -5249975398",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "PC_MAC",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "PC_MAC = 'D8:43:AE:60:81:4E'\nPC_IP = '192.168.1.107'\nGROUP_ID = -5249975398",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "PC_IP",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "PC_IP = '192.168.1.107'\nGROUP_ID = -5249975398",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "GROUP_ID",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "GROUP_ID = -5249975398",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "wake_pc",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def wake_pc():\n    send_magic_packet(PC_MAC)\n    print(f\"🟢 {cmd.WAKE_PC} successful\")\n    return \"✅ Magic Packet sent!\"\ndef restart_pc():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/restart\", timeout=3)\n        return \"🔄 Restart command sent to PC!\"\n    except:\n        return \"❌ PC unreachable\"",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "restart_pc",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def restart_pc():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/restart\", timeout=3)\n        return \"🔄 Restart command sent to PC!\"\n    except:\n        return \"❌ PC unreachable\"\ndef sleep_pc():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/sleep\", timeout=3)\n        return \"😴 Sleep command sent to PC!\"",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_pc",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def sleep_pc():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/sleep\", timeout=3)\n        return \"😴 Sleep command sent to PC!\"\n    except:\n        return \"❌ PC is not responding (Is the receiver script running?)\"\n# === SYSTEM INFO ===\ndef ping_pc():\n    try:\n        response = requests.get(f\"http://{PC_IP}:5000/status\", timeout=2)",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "ping_pc",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def ping_pc():\n    try:\n        response = requests.get(f\"http://{PC_IP}:5000/status\", timeout=2)\n        if response.status_code == 200:\n            return \"🖥️ PC is Online (Receiver Active)\"\n        return \"⚠️ PC is ON but Receiver is Closed\"\n    except:\n        return \"🌑 PC is Offline\"\n# === APP/GAME LAUNCHES ===\ndef launch_steam():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_steam",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_steam():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/steam\", timeout=3)\n        return \"🎮 Launching Steam on PC...\"\n    except:\n        return \"❌ PC unreachable\"\ndef launch_roboquest():\n    requests.get(f\"http://{PC_IP}:5000/roboquest\", timeout=3)\n    return \"🤖 Booting Roboquest...\"\ndef launch_strinova():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_roboquest",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_roboquest():\n    requests.get(f\"http://{PC_IP}:5000/roboquest\", timeout=3)\n    return \"🤖 Booting Roboquest...\"\ndef launch_strinova():\n    requests.get(f\"http://{PC_IP}:5000/strinova\", timeout=3)\n    return \"☄️ Launching Strinova...\"\ndef launch_l4d2():\n    requests.get(f\"http://{PC_IP}:5000/l4d2\", timeout=3)\n    return \"🧟 Opening Left 4 Dead 2...\"\ndef launch_l4d():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_strinova",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_strinova():\n    requests.get(f\"http://{PC_IP}:5000/strinova\", timeout=3)\n    return \"☄️ Launching Strinova...\"\ndef launch_l4d2():\n    requests.get(f\"http://{PC_IP}:5000/l4d2\", timeout=3)\n    return \"🧟 Opening Left 4 Dead 2...\"\ndef launch_l4d():\n    requests.get(f\"http://{PC_IP}:5000/l4d\", timeout=3)\n    return \"🧟 Opening Left 4 Dead 1...\"\ndef launch_kovaaks():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_l4d2",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_l4d2():\n    requests.get(f\"http://{PC_IP}:5000/l4d2\", timeout=3)\n    return \"🧟 Opening Left 4 Dead 2...\"\ndef launch_l4d():\n    requests.get(f\"http://{PC_IP}:5000/l4d\", timeout=3)\n    return \"🧟 Opening Left 4 Dead 1...\"\ndef launch_kovaaks():\n    requests.get(f\"http://{PC_IP}:5000/kovaaks\", timeout=3)\n    return \"🎯 Practice time: Kovaak's...\"\ndef launch_doom():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_l4d",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_l4d():\n    requests.get(f\"http://{PC_IP}:5000/l4d\", timeout=3)\n    return \"🧟 Opening Left 4 Dead 1...\"\ndef launch_kovaaks():\n    requests.get(f\"http://{PC_IP}:5000/kovaaks\", timeout=3)\n    return \"🎯 Practice time: Kovaak's...\"\ndef launch_doom():\n    requests.get(f\"http://{PC_IP}:5000/doom\", timeout=3)\n    return \"👹 Ripping and tearing: DOOM...\"\ndef launch_drg():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_kovaaks",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_kovaaks():\n    requests.get(f\"http://{PC_IP}:5000/kovaaks\", timeout=3)\n    return \"🎯 Practice time: Kovaak's...\"\ndef launch_doom():\n    requests.get(f\"http://{PC_IP}:5000/doom\", timeout=3)\n    return \"👹 Ripping and tearing: DOOM...\"\ndef launch_drg():\n    requests.get(f\"http://{PC_IP}:5000/drg\", timeout=3)\n    return \"⛏️ Rock and Stone! Deep Rock Galactic...\"\ndef launch_apex():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_doom",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_doom():\n    requests.get(f\"http://{PC_IP}:5000/doom\", timeout=3)\n    return \"👹 Ripping and tearing: DOOM...\"\ndef launch_drg():\n    requests.get(f\"http://{PC_IP}:5000/drg\", timeout=3)\n    return \"⛏️ Rock and Stone! Deep Rock Galactic...\"\ndef launch_apex():\n    requests.get(f\"http://{PC_IP}:5000/apex\", timeout=3)\n    return \"🏃 Dropping in: Apex Legends...\"\ndef launch_phasmo():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_drg",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_drg():\n    requests.get(f\"http://{PC_IP}:5000/drg\", timeout=3)\n    return \"⛏️ Rock and Stone! Deep Rock Galactic...\"\ndef launch_apex():\n    requests.get(f\"http://{PC_IP}:5000/apex\", timeout=3)\n    return \"🏃 Dropping in: Apex Legends...\"\ndef launch_phasmo():\n    requests.get(f\"http://{PC_IP}:5000/phasmo\", timeout=3)\n    return \"👻 Hunting ghosts: Phasmophobia...\"\ndef launch_hitman():",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_apex",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_apex():\n    requests.get(f\"http://{PC_IP}:5000/apex\", timeout=3)\n    return \"🏃 Dropping in: Apex Legends...\"\ndef launch_phasmo():\n    requests.get(f\"http://{PC_IP}:5000/phasmo\", timeout=3)\n    return \"👻 Hunting ghosts: Phasmophobia...\"\ndef launch_hitman():\n    requests.get(f\"http://{PC_IP}:5000/hitman\", timeout=3)\n    return \"💼 Contract accepted: Hitman...\"\n# === MESSAGE HANDLER ===",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_phasmo",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_phasmo():\n    requests.get(f\"http://{PC_IP}:5000/phasmo\", timeout=3)\n    return \"👻 Hunting ghosts: Phasmophobia...\"\ndef launch_hitman():\n    requests.get(f\"http://{PC_IP}:5000/hitman\", timeout=3)\n    return \"💼 Contract accepted: Hitman...\"\n# === MESSAGE HANDLER ===\n@client.on(events.NewMessage(chats=GROUP_ID))\nasync def handler(event):\n    sender = await event.get_sender()",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "launch_hitman",
+        "kind": 2,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "def launch_hitman():\n    requests.get(f\"http://{PC_IP}:5000/hitman\", timeout=3)\n    return \"💼 Contract accepted: Hitman...\"\n# === MESSAGE HANDLER ===\n@client.on(events.NewMessage(chats=GROUP_ID))\nasync def handler(event):\n    sender = await event.get_sender()\n    me = await client.get_me()\n    if sender.id != me.id:\n        return",
+        "detail": "listener",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "listener",
+        "description": "listener",
+        "peekOfCode": "client = TelegramClient(\"tablet_session\", API_ID, API_HASH)\n# === PC POWER & RESTART ===\ndef wake_pc():\n    send_magic_packet(PC_MAC)\n    print(f\"🟢 {cmd.WAKE_PC} successful\")\n    return \"✅ Magic Packet sent!\"\ndef restart_pc():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/restart\", timeout=3)\n        return \"🔄 Restart command sent to PC!\"",
+        "detail": "listener",
+        "documentation": {}
+    }
+]

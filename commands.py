@@ -22,5 +22,5 @@ RUN_HITMAN = "run hitman"
 RUN_PHASMO = "run phasmo"
 
 # System control / info
-PING = "ping"            # Basic bot check
-PC_STATUS = "status"     # This triggers your ping_pc() function
+PING = "ping"      
+PC_STATUS = "status"    
