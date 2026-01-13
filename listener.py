@@ -16,8 +16,11 @@ def wake_pc():
     return "✅ Magic Packet sent!"
 
 def restart_pc():
-    print(f"🔄 {cmd.RESTART_PC} triggered")
-    return "🔄 Restarting PC..."
+    try:
+        requests.get(f"http://{PC_IP}:5000/restart", timeout=3)
+        return "🔄 Restart command sent to PC!"
+    except:
+        return "❌ PC unreachable"
 
 def sleep_pc():
     try:
@@ -26,33 +29,18 @@ def sleep_pc():
     except:
         return "❌ PC is not responding (Is the receiver script running?)"
 
-# === SYSTEM CONTROL ===
-def lock_pc():
-    print(f"🔒 {cmd.LOCK_PC} triggered")
-    return "🔒 PC Locked"
-
-def logoff_pc():
-    print(f"👤 {cmd.LOGOFF_PC} triggered")
-    return "👤 Logging off user..."
-
 # === SYSTEM INFO ===
 def ping_pc():
-    # Use -c 1 for Linux/Termux
     status = os.system(f"ping -c 1 {PC_IP} > /dev/null 2>&1")
     return "🖥️ PC is Online" if status == 0 else "🌑 PC is Offline"
 
 # === APP/GAME LAUNCHES ===
 def launch_steam():
     try:
-        # The tablet just "calls" the PC's office
         requests.get(f"http://{PC_IP}:5000/steam", timeout=3)
         return "🎮 Launching Steam on PC..."
     except:
         return "❌ PC unreachable"
-
-def run_gta():
-    print(f"🚗 {cmd.RUN_GTA} triggered")
-    return "🚀 Launching GTA V..."
 
 def launch_roboquest():
     requests.get(f"http://{PC_IP}:5000/roboquest", timeout=3)
@@ -74,19 +62,29 @@ def launch_kovaaks():
     requests.get(f"http://{PC_IP}:5000/kovaaks", timeout=3)
     return "🎯 Practice time: Kovaak's..."
 
-def launch_darksouls():
-    requests.get(f"http://{PC_IP}:5000/darksouls", timeout=3)
-    return "🔥 Prepare to Die: Dark Souls..."
+def launch_doom():
+    requests.get(f"http://{PC_IP}:5000/doom", timeout=3)
+    return "👹 Ripping and tearing: DOOM..."
 
-# === AUTOMATION ===
-def run_backup():
-    print(f"📂 {cmd.RUN_BACKUP} triggered")
-    return "📂 Starting Backup script..."
+def launch_drg():
+    requests.get(f"http://{PC_IP}:5000/drg", timeout=3)
+    return "⛏️ Rock and Stone! Deep Rock Galactic..."
+
+def launch_apex():
+    requests.get(f"http://{PC_IP}:5000/apex", timeout=3)
+    return "🏃 Dropping in: Apex Legends..."
+
+def launch_phasmo():
+    requests.get(f"http://{PC_IP}:5000/phasmo", timeout=3)
+    return "👻 Hunting ghosts: Phasmophobia..."
+
+def launch_hitman():
+    requests.get(f"http://{PC_IP}:5000/hitman", timeout=3)
+    return "💼 Contract accepted: Hitman..."
 
 # === MESSAGE HANDLER ===
 @client.on(events.NewMessage(chats=GROUP_ID))
 async def handler(event):
-    # SAFETY: Only respond if the message is from YOU
     sender = await event.get_sender()
     me = await client.get_me()
     
@@ -97,14 +95,14 @@ async def handler(event):
     reply = None
 
 # Routing logic
-    if msg == cmd.PC_STATUS:
+    if msg == cmd.WAKE_PC:
+        reply = wake_pc()
+    elif msg == cmd.PC_STATUS:
         reply = ping_pc()
     elif msg == cmd.SLEEP_PC:
         reply = sleep_pc()
     elif msg == cmd.RESTART_PC:
         reply = restart_pc()
-    elif msg == cmd.LOCK_PC:
-        reply = lock_pc()
     elif msg == cmd.RUN_STEAM:
         reply = launch_steam()
     elif msg == cmd.RUN_ROBOQUEST:
@@ -117,10 +115,16 @@ async def handler(event):
         reply = launch_l4d()
     elif msg == cmd.RUN_KOVAAKS:
         reply = launch_kovaaks()
-    elif msg == cmd.RUN_DARK_SOULS:
-        reply = launch_darksouls()
-    elif msg == cmd.PING:
-        reply = "pong"
+    elif msg == cmd.RUN_DOOM:
+        reply = launch_doom()
+    elif msg == cmd.RUN_DRG:
+        reply = launch_drg()
+    elif msg == cmd.RUN_APEX:
+        reply = launch_apex()
+    elif msg == cmd.RUN_PHASMO:
+        reply = launch_phasmo()
+    elif msg == cmd.RUN_HITMAN:
+        reply = launch_hitman()
     else:
         reply = f"❓ Unknown command: {msg}"
 
