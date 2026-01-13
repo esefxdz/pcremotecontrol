@@ -31,12 +31,8 @@ def sleep_pc():
 
 # === SYSTEM INFO ===
 def ping_pc():
-    try:
-        response = requests.get(f"http://{PC_IP}:5000/status", timeout=2)
-        if response.status_code == 200:
-            return "🖥️ PC is Online (Receiver Active)"
-    except:
-        return "🌑 PC is Offline"
+    status = os.system(f"ping -c 1 {PC_IP} > /dev/null 2>&1")
+    return "🖥️ PC is Online" if status == 0 else "🌑 PC is Offline"
 
 # === APP/GAME LAUNCHES ===
 def launch_steam():

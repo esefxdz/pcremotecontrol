@@ -356,7 +356,7 @@
         "kind": 2,
         "importPath": "listener",
         "description": "listener",
-        "peekOfCode": "def sleep_pc():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/sleep\", timeout=3)\n        return \"😴 Sleep command sent to PC!\"\n    except:\n        return \"❌ PC is not responding (Is the receiver script running?)\"\n# === SYSTEM INFO ===\ndef ping_pc():\n    try:\n        response = requests.get(f\"http://{PC_IP}:5000/status\", timeout=2)",
+        "peekOfCode": "def sleep_pc():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/sleep\", timeout=3)\n        return \"😴 Sleep command sent to PC!\"\n    except:\n        return \"❌ PC is not responding (Is the receiver script running?)\"\n# === SYSTEM INFO ===\ndef ping_pc():\n    status = os.system(f\"ping -c 1 {PC_IP} > /dev/null 2>&1\")\n    return \"🖥️ PC is Online\" if status == 0 else \"🌑 PC is Offline\"",
         "detail": "listener",
         "documentation": {}
     },
@@ -365,7 +365,7 @@
         "kind": 2,
         "importPath": "listener",
         "description": "listener",
-        "peekOfCode": "def ping_pc():\n    try:\n        response = requests.get(f\"http://{PC_IP}:5000/status\", timeout=2)\n        if response.status_code == 200:\n            return \"🖥️ PC is Online (Receiver Active)\"\n    except:\n        return \"🌑 PC is Offline\"\n# === APP/GAME LAUNCHES ===\ndef launch_steam():\n    try:",
+        "peekOfCode": "def ping_pc():\n    status = os.system(f\"ping -c 1 {PC_IP} > /dev/null 2>&1\")\n    return \"🖥️ PC is Online\" if status == 0 else \"🌑 PC is Offline\"\n# === APP/GAME LAUNCHES ===\ndef launch_steam():\n    try:\n        requests.get(f\"http://{PC_IP}:5000/steam\", timeout=3)\n        return \"🎮 Launching Steam on PC...\"\n    except:\n        return \"❌ PC unreachable\"",
         "detail": "listener",
         "documentation": {}
     },
