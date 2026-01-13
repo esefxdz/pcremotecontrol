@@ -35,7 +35,6 @@ def ping_pc():
         response = requests.get(f"http://{PC_IP}:5000/status", timeout=2)
         if response.status_code == 200:
             return "🖥️ PC is Online (Receiver Active)"
-        return "⚠️ PC is ON but Receiver is Closed"
     except:
         return "🌑 PC is Offline"
 

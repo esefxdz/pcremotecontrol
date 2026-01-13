@@ -365,7 +365,7 @@
         "kind": 2,
         "importPath": "listener",
         "description": "listener",
-        "peekOfCode": "def ping_pc():\n    try:\n        response = requests.get(f\"http://{PC_IP}:5000/status\", timeout=2)\n        if response.status_code == 200:\n            return \"🖥️ PC is Online (Receiver Active)\"\n        return \"⚠️ PC is ON but Receiver is Closed\"\n    except:\n        return \"🌑 PC is Offline\"\n# === APP/GAME LAUNCHES ===\ndef launch_steam():",
+        "peekOfCode": "def ping_pc():\n    try:\n        response = requests.get(f\"http://{PC_IP}:5000/status\", timeout=2)\n        if response.status_code == 200:\n            return \"🖥️ PC is Online (Receiver Active)\"\n    except:\n        return \"🌑 PC is Offline\"\n# === APP/GAME LAUNCHES ===\ndef launch_steam():\n    try:",
         "detail": "listener",
         "documentation": {}
     },
